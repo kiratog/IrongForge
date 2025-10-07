@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>IronForge Fitness</title>
+
+    </head>
+    <body>
+        <nav>
+            <ul id="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="images/crossx.svg" alt="Close the menu button"></a></li>
+                <li onclick=hideSidebar()><a href="#home">Home</a></li>
+                <li onclick=hideSidebar()><a href="#memberships-sec">Membership</a></li>
+                <li onclick=hideSidebar()><a href="#trainers-sec">Trainers</a></li>
+                <li onclick=hideSidebar()><a href="#footer">About</a></li>
+                <li onclick=hideSidebar()><a href="#footer">Contact Us</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html"><img id="n-logo" src="images/logo1.png" alt="IronForge Logo"></a></li>
+                <li><a href="#home"><img id="n-logo1" src="images/logo4.png" alt="IronForge Logo"></a></li>
+                <li class="hideonmob"><a href="#home">Home</a></li>
+                <li class="hideonmob"><a href="#memberships-sec">Membership</a></li>
+                <li class="hideonmob"><a href="#trainers-sec">Trainers</a></li>
+                <li class="hideonmob"><a href="#footer">About</a></li>
+                <li class="hideonmob"><a href="#footer">Contact Us</a></li>
+                <li id="hamburgermenu" onclick=showSidebar()><a href="#"><img src="images/hamburgermenu.svg" alt="menu"></a></li>
+            </ul>
+        </nav>
+        <header id="home">
+            <div id="h-logo"><img src="images/logo3.png" alt="IronForge logo"></div>
+            <div id="tagline"><p>Strenght.Disipline.Transform</p></div>
+            <hr>
+            <div id="h-quote-d"><h2 id="h-quote">YOUR GOALS, OUR MISSIONS</h2></div>
+            <div id="action-btn"><button class="btn" onclick="window.location.href='#memberships-sec'">BUY MEMBERSHIP</button></div>
+            <div id="free-trail-d"><a href="#action">Book a free trial</a></div>
+        </header>
+
+        <section id="trainers-sec">
+            <h2 class="xl">TRAINERS</h2>
+            <div id="trainers">
+                <div class="trainer" id="trainer1">
+                    <h3>Ravi Kumar</h3>
+                    <p>Strength & Conditioning Coach</p>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab harum pariatur explicabo quisquam quod consequuntur accusamus, tenetur recusandae ducimus iusto nihil consequatur laboriosam eos veritatis aliquid repellat, ipsam cumque.</p>
+                </div>
+                <div class="trainer" id="trainer2">
+                    <h3>Priya Sharma</h3>
+                    <p>Certified Yoga Instructor</p>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab harum pariatur explicabo quisquam quod consequuntur accusamus, tenetur recusandae ducimus iusto nihil consequatur laboriosam eos veritatis aliquid repellat, ipsam cumque.</p>
+                </div>
+                <div class="trainer" id="trainer3">
+                    <h3>Aman Verma</h3>
+                    <p>CrossFit & Functional Training</p>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab harum pariatur explicabo quisquam quod consequuntur accusamus, tenetur recusandae ducimus iusto nihil consequatur laboriosam eos veritatis aliquid repellat, ipsam cumque.</p>
+                </div>
+                <div class="trainer" id="trainer4">
+                    <h3>Sneha Patel</h3>
+                    <p>Zumba & Dance Fitness</p>
+                    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ab harum pariatur explicabo quisquam quod consequuntur accusamus, tenetur recusandae ducimus iusto nihil consequatur laboriosam eos veritatis aliquid repellat, ipsam cumque.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timings">
+            <h2 class="xl">TIMINGS</h2>
+            <table>
+                <tr>
+                    <th>TIMINGS</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td>Morning(AM)</td>
+                    <td>5-10</td>
+                    <td>5-10</td>
+                    <td>5-10</td>
+                    <td>5-10</td>
+                    <td>5-10</td>
+                    <td>5-9</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Evening(PM)</td>
+                    <td>4-9</td>
+                    <td>4-9</td>
+                    <td>4-9</td>
+                    <td>4-9</td>
+                    <td>4-9</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="memberships-sec">
+            <h2 class="xl">MEMBERSHIP</h2>
+            <div id="memberships">
+                <div class="m-card" id="card1">
+                    <h3>Premium Plan</h3>
+                    <h4>$4,500<span>/month</span></h4>
+                    <ul>
+                        <li>Unlimited Gym Access</li>
+                        <li>Unlimited personal training</li>
+                        <li>Nutrition guidance</li>
+                        <li>Free group classes (Zumba, Yoga, CrossFit)</li>
+                    </ul>
+                    <button class="btn" onclick="window.location.href='#action'">Learn More</button>
+                </div> 
+                <div class="m-card" id="card2">
+                    <h3>Standard Plan</h3>
+                    <h4>$2,500<span>/month</span></h4>
+                    <ul>
+                        <li>Gym Access</li>
+                        <li>2 Personal training session/month</li>
+                        <li>Free locker + shower</li>
+                    </ul>
+                    <button class="btn" onclick="window.location.href='#action'">Learn More</button>
+                </div> 
+                <div class="m-card" id="card3">
+                    <h3>Basic Plan</h3>
+                    <h4>$1,500<span>/month</span></h4>
+                    <ul>
+                        <li>Gym Access only</li>
+                        <li>Free locker access</li>
+                    </ul>
+                    <button class="btn" onclick="window.location.href='#action'">Learn More</button>
+                </div> 
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="testimonial" id="testimonial-1">
+                <div class="profile">
+                    <img src="images/client1.jpeg" alt="client">
+                    <h5 class="client-name">M.Khareef</h5>
+                </div>
+                <p class="review">
+                    I really liked the gym!, it was soo good that i have to let myself do more exercise
+                </p>
+            </div>
+            <div class="testimonial" id="testimonial-2">
+                <div class="profile">
+                    <img src="images/client2.jpeg" alt="client">
+                    <h5 class="client-name">M.Mangamma</h5>
+                </div>
+                <p class="review">
+                    I really liked the gym!, it was soo good that i have to let myself do more exercise
+                </p>
+            </div>
+            <div class="testimonial" id="testimonial-3">
+                <div class="profile">
+                    <img src="images/client3.jpeg" alt="client">
+                    <h5 class="client-name">R.Santhos</h5>
+                </div>
+                <p class="review">
+                    I really liked the gym!, it was soo good that i have to let myself do more exercise
+                </p>
+            </div>
+            <div class="testimonial" id="testimonial-4">
+                <div class="profile">
+                    <img src="images/client4.jpeg" alt="client">
+                    <h5 class="client-name">K.Chirangeevi</h5>
+                </div>
+                <p class="review">
+                    I really liked the gym!, it was soo good that i have to let myself do more exercise
+                </p>
+            </div>
+            <div class="testimonial" id="testimonial-5">
+                <div class="profile">
+                    <img src="images/client5.jpeg" alt="client">
+                    <h5 class="client-name">A.AAthu</h5>
+                </div>
+                <p class="review">
+                    I really liked the gym!, it was soo good that i have to let myself do more exercise
+                </p>
+            </div>
+            <div class="testimonial" id="testimonial-6">
+                <h5>800+ Members</h5>
+            </div>
+        </section>
+        <section id="action">
+        <div class="headingd"><h2 class="xl">Book a Free Trial</h2></div>
+        <form action="#" id="free-trial-form">
+            <div class="user-details">
+                <div id="fname-div" class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="fname" placeholder="Enter Full Name" required>
+                </div>
+                <div id="dob-div" class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" id="f-dob" required>
+                </div>
+                <div id="gender-div" class="input-box">
+                    <span class="details">Gender:</span>
+                    <div id="gender">
+                        <div class="radio">
+                            <input type="radio" name="gender" id="gender1" value="Male" checked>
+                            <label for="gender1">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="gender" id="gender2" value="Female">
+                            <label for="gender2">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="number-div" class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" id="number" placeholder="Enter Phone number" required>
+                </div>
+                <div id="email-div" class="input-box">
+                    <span class="details">Email Address</span>
+                    <input type="email" id="email" placeholder="Enter email Address">
+                </div>
+                <div id="date-div" class="input-box">
+                    <span class="details">Preferred Trail Date</span>
+                    <input type="datetime-local" id="date" required>
+                </div>
+                <div id="goal-div" class="input-box">
+                    <span class="details">Fitness Goal</span>
+                    <input type="text" id="goal" placeholder="e.g.,Weight Loss, Muscle Gain, General Fitness,etc">
+                </div>
+            </div>
+            <div id="agreement-div">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to follow IronForge Gym's rules and take full responsibility for my health during the trail</label>
+            </div>
+            <div id="button" >
+                    <input type="submit" value="Submit" class="btn1">
+            </div>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div id="footer-part-1">
+            <div class="split" id="split0">
+                <img src="images/logo1.png" alt="">
+            </div>
+            <div class="split" id="split1">
+                <h5>Quick Links</h5>
+                <div id="quick-links">
+                    <a class="a1" href="#home">Home</a>
+                    <a class="a1" href="#trainers-sec">Trainers</a>
+                    <a class="a1" href="#timings">Timings</a>
+                    <a class="a1" href="#memberships-sec">Membership</a>
+                    <a class="a1" href="#action">Book a trail</a>
+                    <a class="a1" href="#footer">Contact Us</a>
+                </div>
+            </div>
+            <div class="split" id="split3">
+                <h5>Social Media</h5>
+                <div id="social-media">
+                    <a class="a1" href="suprice.html">Blog</a>
+                    <a class="a1" href="suprice.html">X</a>
+                    <a class="a1" href="suprice.html">Tick Tock</a>
+                    <a class="a1" href="suprice.html">Instagram</a>
+                    <a class="a1" href="suprice.html">Facebook</a>
+                    <a class="a1" href="suprice.html">LinkedIn</a>
+                </div>
+            </div>
+            <div class="split" id="split2">
+                <h5>Contact Us</h5>
+                <p>Phone No:7032460367</p>
+                <p>Gmail:ironforge@gym.com</p>
+                <p>Address:123 MG Road, Erripooknagar, Mirzapur, Bihar-69696</p>
+            </div>
+        </div>
+        <div id="footer-part-2">
+            <p>&copy;2025. All Rights are NOT Reserved</p>
+        </div>
+    </footer>
+
+        <script>
+            function showSidebar(){
+                const sideBar = document.getElementById('sidebar');
+                sideBar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sideBar = document.getElementById('sidebar');
+                sideBar.style.display = 'none'
+            }
+        </script>
+    </body>
+</html>
