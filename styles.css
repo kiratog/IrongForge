@@ -218,19 +218,6 @@ header a{
     background-color: var(--primary);
 }
 
-#timings table tr th:nth-child(1){
-    color: var(--accent0);
-    text-shadow: 0 0 5px var(--accent1);
-}
-
-#timings table tr th:nth-child(8){
-    color: var(--accent0);
-}
-
-#timings table tr:nth-child(3) td:nth-child(7){
-    color: var(--accent0);
-}
-
 /* Testimonials */
 
 #testimonials{
