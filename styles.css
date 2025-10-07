@@ -547,6 +547,7 @@ a:hover{
 }
 
 #testimonials .profile{
+    margin: 0 5px;
     width: 15rem;
     display: flex;
     align-items: center;
